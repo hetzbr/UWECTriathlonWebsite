@@ -1,0 +1,271 @@
+@charset "utf-8";
+
+/*Page layout areas */ 
+
+body {
+	position:relative;
+	width:1000px;
+	margin: 0 auto;
+	background-image:url(assets/gradient_background.jpg);
+	background-repeat:repeat-y;
+	background-repeat:repeat-x;
+	background-size:cover;
+}
+
+/* Heading and Content Styles */
+
+h1 {
+	font-size:28px;
+	font-family:Arial, Helvetica, sans-serif;
+	color: #fff;
+	font-weight:bolder;
+}
+h2 { font-size:22px;
+font-family:Arial, Helvetica, sans-serif;
+color: rgb(241, 179, 20);
+font-weight:bold;
+}
+
+h3 {
+	font-size:23px;
+	font-family:Arial, Helvetica, sans-serif;
+color: #fff;
+font-weight:bold;
+}
+
+p {
+	font-size:18px;
+	font-family:Arial, Helvetica, sans-serif;
+	color:#FFF;
+	
+}
+.listclass { list-style-type: none;
+        list-style-position:inside;
+        margin:0;
+        padding:0; 
+}
+
+/* Alignment and Font Styles */
+
+.centeralign {
+	display: block;
+    margin-left: auto;
+    margin-right: auto 
+}
+.textaligncenter {
+	text-align: center;
+}
+
+.textpadding {
+	padding-left:40px;
+}
+.sidebarparagraph {
+	color:#FFF;
+	font-size:18px;
+	font-family:Arial, Helvetica, sans-serif;
+	
+}
+
+.TableHeader {
+font-size:20px;
+font-family:Arial, Helvetica, sans-serif;
+color: #fff;
+font-weight:bold;
+}
+.Emails {
+font-family:Arial, Helvetica, sans-serif;
+color: rgb(241, 179, 20);
+font-weight:bold;
+font-size:16px;
+}
+
+/* Link Styles */
+
+a:link {
+	color: rgb(241, 179, 20);
+}
+a:visited {
+	color:#FF6;
+}
+a:hover {
+	color:#FFF;
+}
+
+/*Page layout areas */
+
+#Banner{
+	position: absolute;
+	width: 1000px;
+	height: 150px;
+	z-index: 9;
+	left: 0px;
+	top: 0px;
+	
+	
+}
+
+#Container{
+	background-color: rgb(0, 51, 102);
+	position: absolute;
+	width: 1000px;
+	height: 850px;
+	z-index: 1;
+	left: 0px;
+	top: 0px;
+}
+
+#NavBar{
+	background-color: rgb(0, 51, 102);
+	position: absolute;
+	width: 1000px;
+	height: 50px;
+	z-index: 10;
+	left: 0px;
+	top: 171px;
+}
+
+#BodyContent {
+	position: absolute;
+	width: 633px;
+	height: 542px;
+	z-index: 12;
+	left: 212px;
+	top: 233px;
+}
+
+#PictureContent {
+	position: absolute;
+	width: 773px;
+	height: 542px;
+	z-index: 12;
+	left: 212px;
+	top: 233px;
+}
+
+
+
+#LeftBar {
+	position: absolute;
+	width: 146px;
+	height: 628px;
+	z-index: 11;
+	left: 0px;
+	top: 221px;
+	border-right: 1px solid rgb(241, 179, 20);
+	padding-left:15px;
+	padding-right:5px;
+}
+
+#HomeContent {
+	position: absolute;
+	width: 1000px;
+	height: 700px;
+	z-index: 14;
+	left: 2px;
+	top: 224px;
+}
+#PageContent {
+		poition:absolute;
+		width:500px;
+		height:700px;
+		z-index:16;
+		left:127px;
+		top:224px;
+}
+
+ #photoalign {
+	 text-align:center;
+ }
+
+#navMenu {
+    margin:0;
+    width:auto;
+	position: absolute;
+	z-index: 11;
+	left: 0px;
+	top:16px;
+ }
+
+  #navMenu ul {
+    margin:0;
+    padding:0;
+    line-height:30px;
+ }
+
+  #navMenu li {
+    margin:0;
+    padding:0;
+    list-style:none;
+    float:left;
+    position:relative;
+    background: rgb(0, 51, 102);
+ }
+
+  #navMenu ul li a {
+    text-align:center; 
+    height:30px;
+    width:164.5px;
+    display:block;
+    color:#FFF;
+    font-family:"Segoe Print";
+    text-decoration:none;
+    color: rgb (0, 51, 102);
+    border:1px solid rgb(241, 179, 20);
+	border-top-color: rgb(0, 51, 102);
+	
+    text-shadow:1px 1px 1px #000; 
+ }
+
+/* NavMenu Styles */
+
+ /*********************************************/
+ /* hide menu and allow it to return */
+ /*********************************************/
+
+	#navMenu ul ul {
+	position:absolute;
+	visibility:hidden;
+	top:32px;
+ }
+
+  #navMenu ul li:hover ul {
+    visibility:visible;
+    z-index:9999; 
+ }
+
+  /**********************************************/
+
+  /*sets top level hover color*/
+
+  #navMenu li:hover {
+   background: rgb(241, 179, 20);
+ }
+
+  /*sets link items hover color and background*/
+
+  #navMenu ul li:hover ul li a:hover {
+    color:#FFF;
+    background: rgb(241, 179, 20);
+ }
+
+  /* Changes text color on hover for main menu hover*/
+
+  #navMenu a:hover {   
+  color: rgb(0, 51, 102);
+ } 
+  
+ /* Contains the Float */
+
+ .clearFloat {
+    clear:both; 
+    margin:0;
+    padding:0;
+ }
+
+ /* IE7 Display Fix */
+
+ #navMenu ul li { 
+
+  display: inline; 
+ 
+ }
